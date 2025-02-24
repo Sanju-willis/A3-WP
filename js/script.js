@@ -12,6 +12,19 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
+    const floatingNavbar = document.querySelector(".floating-navbar");
+
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > window.innerHeight) {
+            floatingNavbar.classList.add("show-navbar");
+        } else {
+            floatingNavbar.classList.remove("show-navbar");
+        }
+    });
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
     console.log("Hero section loaded successfully!");
 });
 
