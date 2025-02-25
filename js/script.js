@@ -1,3 +1,6 @@
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
     let menuParent = document.querySelector(".mega-menu-parent");
     let megaMenu = document.querySelector(".mega-menu");
@@ -27,4 +30,13 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
     console.log("Hero section loaded successfully!");
 });
+
+
+window.onscroll = function () { myFunction() };
+function myFunction() {
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    document.getElementById("myBar").style.width = scrolled + "%";
+}
 
