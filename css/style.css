@@ -392,6 +392,7 @@
     color: #585858;
 }
 
+
 /* 🔹 Subheading */
 .conversion-subheading {
     font-family: Aleo Regular;
@@ -553,13 +554,19 @@
 /* The Big Mistakes Hurting Your Sales Section */
 .big-mistakes-section {
     padding: 80px 0;
+    padding-top: 0;
     background: #ffffff;
     text-align: center;
 }
 
+.big-mistakes-section .line-separator {
+    margin-top: 80px;
+}
+
 /* Section Heading */
 .big-mistakes-title {
-    font-size: 2.5rem;
+    font-family: Royal Castle;
+    font-size: 3rem;
     font-weight: bold;
     color: black;
     margin-bottom: 40px;
@@ -578,17 +585,18 @@
 .mistakes-list {
     list-style: none;
     padding: 0;
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     text-align: left;
 }
 
 .mistakes-list li {
-    font-size: 1.2rem;
-    margin-bottom: 12px;
+    font-family: Aleo Bold Font;
+    font-size: 1rem;
+    margin-bottom: 10px;
     display: flex;
     align-items: center;
-    color: #333;
+    color: #4D4D4D;
 }
 
 .mistakes-list .icon {
@@ -599,10 +607,11 @@
 
 /* Revenue Message */
 .revenue-message {
-    font-size: 1.5rem;
+    font-family: Aleo Bold Font;
+    font-size: 2rem;
     font-weight: bold;
     color: #555;
-    margin-top: 30px;
+    margin-top: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -616,16 +625,17 @@
 
 /* CTA Button */
 .conversion-btn {
+    font-family: Roboto Reguler;
     background: #007bff;
     color: white;
     border-radius: 50px;
-    padding: 12px 20px;
+    padding: 12px 25px;
     font-size: 1.2rem;
-    font-weight: bold;
     display: inline-block;
     text-decoration: none;
-    margin-top: 20px;
-    text-align: center;
+    margin-top: 15px;
+    text-align: left;
+
 }
 
 .conversion-btn span {
@@ -636,22 +646,31 @@
 .cro-process {
     text-align: center;
     padding: 60px 20px;
+    padding-top: 0px;
     background: #fff;
 }
 
+.cro-process .line-separator {
+    margin-top: 80px;
+}
+
 .cro-title {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #222;
+    font-family: Royal Castle;
+    font-size: 3rem;
+    color: #000000;
+    margin-bottom: 0;
 }
 
 .cro-title .highlight {
+    font-family: Royal Castle;
+    font-size: 3rem;
     color: #ff0080;
 }
 
 .cro-subtitle {
+    font-family: Aleo Bold Font;
     font-size: 1.2rem;
-    color: #666;
+    color: #666666;
     margin-bottom: 40px;
 }
 
@@ -659,16 +678,29 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
-    max-width: 1100px;
+    max-width: 1250px;
     margin: auto;
 }
 
 .cro-step {
+    border-style: solid;
+    border-color: #f0f0f0;
+    border-width: 1px;
     background: #f9f9f9;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
     transition: 0.3s ease-in-out;
+}
+
+.cro-step .title-box {
+    min-height: 225px;
+}
+
+.cro-step .line {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 2px;
+    background: #ececec;
 }
 
 .cro-step:hover {
@@ -676,26 +708,23 @@
 }
 
 .cro-step img {
-    max-width: 80px;
-    margin-bottom: 15px;
+    max-height: 150px;
+    margin-bottom: 25px;
 }
 
 .cro-step h3 {
-    font-size: 1.4rem;
-    color: #222;
+    font-family: Aleo Bold Font;
+    font-size: 1rem;
+    color: #4D4D4D;
     margin-bottom: 10px;
 }
 
-.cro-step p {
-    font-weight: bold;
-    color: #ff0080;
-}
-
 .cro-step ul {
+    font-family: Aleo Regular;
     list-style: none;
     padding: 0;
-    font-size: 1rem;
-    color: #555;
+    font-size: 0.9rem;
+    color: #808080;
 }
 
 .cro-step ul li {
@@ -703,25 +732,27 @@
 }
 
 .cro-results {
+    font-family: Aleo Regular;
     margin-top: 40px;
-    font-size: 1.2rem;
-    color: #333;
+    font-size: 2rem;
+    color: #666666;
 }
 
-.cro-button {
-    display: inline-block;
+.cro-process-button {
+    font-family: Roboto Reguler;
     background: #007bff;
     color: white;
+    border-radius: 50px;
     padding: 12px 25px;
     font-size: 1.2rem;
-    font-weight: bold;
-    border-radius: 5px;
-    margin-top: 20px;
+    display: inline-block;
     text-decoration: none;
+    margin-top: 15px;
+    text-align: left;
     transition: 0.3s ease-in-out;
 }
 
-.cro-button:hover {
+.cro-process-button:hover {
     background: #0056b3;
 }
 
@@ -733,7 +764,7 @@
 }
 
 .cro-logos img {
-    max-width: 100px;
+    max-height: 35px;
     opacity: 0.7;
     transition: 0.3s ease-in-out;
 }
@@ -760,18 +791,46 @@
 
 /* Is CRO Right for You Section */
 .cro-right {
+    font-family: Aleo Regular;
     text-align: center;
     padding: 60px 20px;
+    padding-top: 0px;
     background: #fff;
 }
 
+.cro-right .line-separator {
+    margin-top: 80px;
+}
+
+
+.cro-right-button {
+    font-family: Roboto Reguler;
+    background: #007bff;
+    color: white;
+    border-radius: 50px;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 15px;
+    text-align: left;
+    transition: 0.3s ease-in-out;
+}
+
+.cro-right-button:hover {
+    background: #0056b3;
+}
+
 .cro-right-title {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #222;
+    font-family: Royal Castle;
+    font-size: 3rem;
+    color: #000000;
+    margin-bottom: 0;
 }
 
 .cro-right-title .highlight {
+    font-family: Royal Castle;
+    font-size: 3rem;
     color: #ff0080;
 }
 
@@ -787,6 +846,7 @@
 }
 
 .cro-right-text {
+
     flex: 1;
     text-align: left;
     font-size: 1.2rem;
@@ -814,36 +874,14 @@
 }
 
 .cro-right-note {
-    font-size: 1.3rem;
+    font-family: Aleo Bold Font;
+    font-size: 1.7rem;
     margin-top: 30px;
-    color: #333;
+    color: #666666;
 }
 
-.cro-right-note .highlight {
-    color: #ff0080;
-    font-weight: bold;
-}
 
-.cro-right-note .bold {
-    font-weight: bold;
-}
 
-.cro-button {
-    display: inline-block;
-    background: #007bff;
-    color: white;
-    padding: 12px 25px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    border-radius: 5px;
-    margin-top: 20px;
-    text-decoration: none;
-    transition: 0.3s ease-in-out;
-}
-
-.cro-button:hover {
-    background: #0056b3;
-}
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -870,19 +908,20 @@
 .cro-concern {
     text-align: center;
     padding: 60px 20px;
+    padding-top: 0px;
     background: #fff;
 }
 
-.cro-concern-title {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #222;
-    margin-bottom: 30px;
+.cro-concern .line-separator {
+    margin-top: 80px;
 }
 
-.cro-concern-title em {
-    font-weight: 400;
-    font-style: italic;
+.cro-concern-title {
+    font-family: Royal Castle;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 60px;
 }
 
 /* FAQ List */
@@ -897,73 +936,68 @@
     align-items: flex-start;
     gap: 15px;
     margin-bottom: 20px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #ECECEC;
 }
 
 .faq-number {
-    font-size: 1.4rem;
+    font-family: Aleo Bold Font;
+    font-size: 1.3rem;
     font-weight: bold;
-    color: #888;
+    color: #4D4D4D;
 }
 
 .faq-content h3 {
-    font-size: 1.2rem;
-    font-weight: 600;
+    font-family: Aleo Bold Font;
+    font-size: 1.3rem;
+    font-weight: bold;
     margin-bottom: 5px;
-    color: #222;
+    color: #4D4D4D;
 }
 
 .faq-content p {
+    font-family: Aleo Regular;
     font-size: 1rem;
-    color: #666;
-}
-
-.faq-content p a {
     color: #007bff;
-    text-decoration: none;
 }
 
-.faq-content p a:hover {
-    text-decoration: underline;
-}
 
 /* CRO Strategy Text */
 .cro-strategy {
-    font-size: 1.3rem;
-    margin-top: 40px;
-    color: #333;
+    font-family: Aleo Bold Font;
+    font-size: 2rem;
+    margin-top: 60px;
+    color: #666666;
     font-weight: bold;
 }
 
+
 /* Ask a CRO Expert Button */
-.cro-button {
+.ask-cro-button {
+    font-family: Aleo Bold Font;
+    font-size: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #c084fc;
+    background: #C577DE;
     color: white;
-    padding: 12px 25px;
-    font-size: 1.2rem;
+    padding: 30px 25px;
     font-weight: bold;
     border-radius: 10px;
-    margin-top: 20px;
     text-decoration: none;
     transition: 0.3s ease-in-out;
-    width: 280px;
+    width: 600px;
     margin: 20px auto 0;
     box-shadow: 0 5px 15px rgba(192, 132, 252, 0.3);
 }
 
-.cro-button img {
-    width: 40px;
-    height: 40px;
+.ask-cro-button img {
+    width: 100px;
     border-radius: 50%;
     margin-right: 10px;
 }
 
-.cro-button:hover {
-    background: #a855f7;
+.ask-cro-button:hover {
+    background: rgb(143, 72, 209);
 }
 
 /* Responsive Design */
@@ -990,18 +1024,26 @@
 .cro-services {
     text-align: center;
     padding: 60px 20px;
+    padding-top: 0px;
     background: #fff;
 }
 
+.cro-services .line-separator {
+    margin-top: 80px;
+}
+
 .cro-services-title {
-    font-size: 2.5rem;
+    font-family: Royal Castle;
+    font-size: 3rem;
     font-weight: 700;
-    color: #222;
-    margin-bottom: 30px;
+    color: #080808;
+    margin-bottom: 50px;
 }
 
 .cro-services-title .highlight {
-    color: #ff0080;
+    font-family: Royal Castle;
+    font-size: 3rem;
+    color: #DD1082;
 }
 
 /* Services Grid */
@@ -1014,10 +1056,13 @@
 }
 
 .service-item {
+    border-style: solid;
+    border-color: #f0f0f0;
+    border-width: 1px;
     background: #f9f9f9;
-    padding: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
     transition: 0.3s ease-in-out;
     text-align: center;
 }
@@ -1026,14 +1071,20 @@
     transform: translateY(-5px);
 }
 
+.service-item-img-box {
+    min-height: 175px;
+}
+
 .service-item img {
-    max-width: 80px;
+    max-height: 140px;
     margin-bottom: 15px;
 }
 
 .service-item h3 {
-    font-size: 1.2rem;
-    color: #222;
+    font-family: Aleo Regular;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #4D4D4D;
 }
 
 /* Responsive */
@@ -1057,23 +1108,28 @@
 .grow-revenue {
     text-align: center;
     padding: 60px 20px;
+    padding-top: 0px;
     background: #fff;
 }
 
 .grow-title {
-    font-size: 2.5rem;
+    font-family: Royal Castle;
+    font-size: 3rem;
     font-weight: 700;
-    color: #222;
-    margin-bottom: 10px;
+    color: #080808;
+    margin-bottom: 0px;
 }
 
 .grow-title .highlight {
+    font-family: Royal Castle;
+    font-size: 3rem;
     color: #ff0080;
 }
 
 .grow-subtitle {
-    font-size: 1.3rem;
-    color: #666;
+    font-family: Aleo Regular;
+    font-size: 1.4rem;
+    color: #666666;
     margin-bottom: 40px;
 }
 
@@ -1087,13 +1143,24 @@
 }
 
 .grow-item {
+    border-style: solid;
+    border-color: #f0f0f0;
+    border-width: 1px;
     background: #f9f9f9;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
     transition: 0.3s ease-in-out;
-    text-align: center;
-    position: relative;
+}
+
+.grow-item .line {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 2px;
+    background: #ececec;
+}
+
+.grow-item .title-box {
+    min-height: 225px;
 }
 
 .grow-item:hover {
@@ -1101,39 +1168,38 @@
 }
 
 .grow-item img {
-    max-width: 80px;
-    margin-bottom: 15px;
+    max-height: 160px;
+    margin-bottom: 25px;
 }
 
 .grow-item h3 {
-    font-size: 1.2rem;
-    color: #222;
+    font-family: Aleo Bold Font;
+    font-size: 1rem;
+    color: #4D4D4D;
+    margin-bottom: 10px;
 }
 
 .grow-item p {
-    font-size: 1rem;
-    color: #555;
+    font-family: Aleo Regular;
+    list-style: none;
+    padding: 0;
+    font-size: 0.9rem;
+    color: #808080;
 }
 
-/* Check Icon */
-.check-icon {
-    display: block;
-    font-size: 1.5rem;
-    color: green;
-    margin-top: 10px;
-}
 
 /* CTA Button */
 .grow-button {
-    display: inline-block;
+    font-family: Roboto Reguler;
     background: #007bff;
     color: white;
-    padding: 12px 25px;
+    border-radius: 50px;
+    padding: 15px 40px;
     font-size: 1.2rem;
-    font-weight: bold;
-    border-radius: 5px;
-    margin-top: 30px;
+    display: inline-block;
     text-decoration: none;
+    margin-top: 40px;
+    text-align: left;
     transition: 0.3s ease-in-out;
 }
 
@@ -1155,4 +1221,5 @@
         font-size: 1rem;
         padding: 10px 20px;
     }
+
 }
