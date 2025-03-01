@@ -1,0 +1,145 @@
+/* ---------- Base Container ---------- */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  /* ---------- Section Wrapper ---------- */
+  .power-of-cro {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #fff;
+  }
+  .power-of-cro .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .power-of-cro .section-subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* ---------- CRO Visual Layout ---------- */
+  .cro-visual {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  /* Stats on the left & right */
+  .cro-stats-left, .cro-stats-right {
+    flex: 1 1 200px;
+    min-width: 200px;
+    max-width: 300px;
+    margin: 10px;
+    text-align: left;
+  }
+  .cro-stats-left h3, .cro-stats-right h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  .cro-stats-left p, .cro-stats-right p {
+    font-size: 1rem;
+    margin: 5px 0;
+    color: #444;
+  }
+  
+  /* ---------- Funnel Container ---------- */
+  .cro-funnel {
+    position: relative;
+    margin: 10px;
+  }
+  .funnel-img {
+    max-width: 250px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Example labels around the funnel (adjust positioning as needed) */
+  .cro-top-label {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #333;
+  }
+  .cro-middle-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 1rem;
+    color: #DD1082; /* highlight color */
+    white-space: nowrap;
+  }
+  .cro-right-label {
+    position: absolute;
+    top: 30%;
+    right: -150px; /* adjust as needed */
+    width: 150px;
+    font-size: 0.9rem;
+    color: #333;
+    text-align: left;
+    line-height: 1.3;
+  }
+  
+  /* ---------- Summary Text & CTA ---------- */
+  .cro-summary {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  .cro-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  .cro-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* ---------- Fade-In Animation (Optional) ---------- */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease;
+  }
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* ---------- Responsive Adjustments ---------- */
+  @media (max-width: 768px) {
+    .cro-visual {
+      flex-direction: column;
+    }
+    /* If the right label overlaps on smaller screens, reposition it */
+    .cro-right-label {
+      position: static;
+      transform: none;
+      margin-top: 10px;
+      text-align: center;
+      width: auto;
+      right: auto;
+    }
+  }
+  
