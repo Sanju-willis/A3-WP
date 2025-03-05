@@ -1,0 +1,1640 @@
+css
+
+/* Fonts */
+
+@font-face {
+    font-family: Royal Castle;
+    src: url(../fonts/Royal-Castle-Bold.ttf);
+}
+
+@font-face {
+    font-family: Aleo Regular;
+    src: url(../fonts/Aleo-Regular.otf);
+}
+
+@font-face {
+    font-family: Aleo Bold Font;
+    src: url(../fonts/Aleo-Bold.otf);
+}
+
+@font-face {
+    font-family: Roboto Reguler;
+    src: url(/fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: Bangers Reguler;
+    src: url(../fonts/bangers.regular.ttf);
+}
+
+.line-separator {
+    height: 2px;
+    background: #ececec;
+    margin-top: 1rem;
+}
+
+
+/* Top Contact Section */
+.top-contact {
+    background: #007bff;
+    padding: 8px 12px;
+    text-align: right;
+}
+
+.contact-btn {
+    font-size: 13px;
+    padding: 6px 8px;
+    background: transparent;
+    color: white;
+    border: none;
+}
+
+/* Progress bar */
+
+.navbar-indicator-container {
+    align-items: center;
+}
+
+.progress-container {
+    width: 100%;
+    height: 5px;
+    background: #ececec;
+}
+
+.progress-bar {
+    height: 5px;
+    background: #DD1082;
+    width: 0%;
+}
+
+/* Navbar */
+.navbar {
+    background: #ffffff !important;
+    padding: 15px 0;
+}
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-family: Aleo Regular;
+    color: #333;
+    font-weight: bold;
+}
+
+
+
+/* Proposal Button */
+.proposal-btn {
+    font-family: Roboto Reguler;
+    background: #007bff;
+    color: white;
+    border-radius: 50px;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.proposal-btn:hover {
+    background: #0056b3;
+}
+/* Change color on hover */
+.navbar-nav .nav-link:hover {
+    color: #ff0000; /* Replace with your desired hover color */
+}
+
+/* Change color when the item is actively being clicked */
+.navbar-nav .nav-link:active {
+    color: #00ff00; /* Replace with your desired active color */
+}
+
+/* Mega Menu */
+.mega-menu {
+    position: absolute;
+    top: 100%; /* positions the mega menu right below its parent element */
+    margin-top: 5px; /* adds extra space below the navbar */
+    width: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    padding: 20px;
+    display: none;
+    box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    z-index: 1300;
+}
+
+
+/* Align Mega Menu Items in a Row */
+.mega-menu-content {
+    min-width: 1200px;
+    padding: 20px;
+    display: flex;
+    /* Ensures horizontal layout */
+    flex-direction: row;
+    justify-content: space-between;
+    /* Spaces items evenly */
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    /* Prevents stacking */
+}
+
+.mega-menu-content h5 {
+    font-family: Aleo Regular;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #333333;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.mega-menu-content ul li {
+    font-family: Aleo Regular;
+    font-size: 0.9rem;
+    color: #666666;
+    list-style-type: square;
+}
+
+/* Solutions Box */
+.mega-menu .solutions-box {
+    background: #007BFF;
+    color: #007BFF;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.mega-menu .solutions-box h5 {
+    color: #ffffff;
+    font-weight: normal;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.mega-menu .solutions-box ul li {
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 0.8rem;
+    margin-top: 5px;
+    text-align: left;
+}
+
+/* Solutions Box Button */
+.mega-menu .solutions-box a {
+    display: block;
+    background: #ffffff;
+    color: #007BFF;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Show Mega Menu on Hover */
+.mega-menu-parent:hover .mega-menu {
+    display: flex;
+    /* Use flex to keep alignment */
+    justify-content: space-between;
+    /* Keep items evenly spaced */
+}
+
+/* Floating Navbar */
+.floating-navbar {
+    position: fixed;
+    top: -150px;
+    /* Hidden initially */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    max-width: 1200px;
+    background: rgb(233, 233, 233);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    font-weight: bold;
+    transition: top 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+/* Floating Navbar Links */
+.floating-navbar a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.floating-navbar a:hover,
+.floating-navbar a.active {
+    color: #007bff;
+}
+
+/* Show Navbar on Scroll */
+.show-navbar {
+    top: 105px;
+}
+
+
+/* Hero Section - Full Screen Centered */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 140px;
+    background: #ffffff;
+}
+
+/* Title */
+.hero-section h1 {
+    font-size: 3.7rem;
+    font-weight: bold;
+    color: black;
+    text-align: left;
+    margin-bottom: -10px;
+}
+
+.hero-content {
+    margin-bottom: 10px;
+}
+
+.hero-left-content {
+    text-align: left;
+}
+
+/* Crossed Text */
+.crossed-text {
+    font-family: Aleo Regular;
+    font-size: 2rem;
+    color: rgb(53, 53, 53);
+    text-decoration: line-through;
+    text-decoration-color: red;
+    display: inline-block;
+}
+
+.agency-text {
+    font-family: Aleo Regular;
+    font-size: 2.5rem;
+    color: rgb(53, 53, 53);
+}
+
+/* Description */
+.hero-description {
+    font-size: 1.5rem;
+    font-family: Aleo Regular;
+    color: #666;
+    text-align: left;
+}
+
+/* Right Side Text */
+
+.guarantee-text {
+    font-family: Aleo Bold Font;
+    font-size: 2rem;
+    color: #555;
+}
+
+.highlight {
+    font-family: Aleo Bold Font;
+    color: #007bff;
+    font-size: 2rem;
+    font-weight: bold;
+
+}
+
+.bold-free {
+    font-family: Bangers Reguler;
+    color: #007bff;
+    font-size: 3rem;
+
+}
+
+/* CTA Button */
+.hero-btn {
+    font-family: Roboto Reguler;
+    background: #007bff;
+    color: white;
+    border-radius: 50px;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 15px;
+    text-align: left;
+}
+
+.hero-btn span {
+    margin-left: 8px;
+}
+
+/* Bottom Features Centered - 3 Equal Columns */
+.bottom-features {
+    width: 100%;
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+.bottom-features .row {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.bottom-features .feature-item {
+    font-family: Aleo Regular;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #6d6d6d;
+}
+
+.bottom-features .feature-item-image {
+    height: 25px;
+    padding-right: 10px;
+}
+
+
+/*🔹 Conversion Problem Section */
+.conversion-problem {
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+/* 🔹 Main Heading */
+.conversion-title {
+    font-family: Royal Castle;
+    font-size: 45px;
+    color: #111;
+}
+
+.highlight-text {
+    color: #DD1082;
+    font-weight: bold;
+}
+
+/* 🔹 Problem Boxes */
+.problem-box {
+    border-style: solid;
+    border-color: #f0f0f0;
+    border-width: 1px;
+    background: #f9f9f9;
+    padding-top: 20px;
+    padding-left: 38px;
+    padding-right: 38px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 30px;
+    min-height: 42lvh;
+}
+
+.problem-box img {
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.problem-box p {
+    font-family: Aleo Regular;
+    font-size: 18px;
+    color: #585858;
+}
+
+
+/* 🔹 Subheading */
+.conversion-subheading {
+    font-family: Aleo Regular;
+    color: #575757;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.conversion-subheading-02 {
+    font-family: Aleo Regular;
+    color: #575757;
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+
+.conversion-highlight {
+    font-family: Bangers Reguler;
+    font-size: 35px;
+    font-weight: normal;
+    color: #DD1082;
+}
+
+/* 🔹 Call-to-Action Links */
+.cta-links {
+    font-family: Aleo Regular;
+    font-size: 25px;
+}
+
+.cta-links a {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Benefits Section */
+.benefits {
+    font-family: Aleo Regular;
+    margin-top: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #5a5a5a;
+    padding-bottom: 40px;
+}
+
+.benefits img {
+    height: 25px;
+    padding-right: 10px;
+}
+
+/* Digital Marketing Section */
+.digital-marketing-section {
+    padding: 80px 0;
+    padding-top: 30px;
+    background: #ffffff;
+    text-align: center;
+}
+
+/* Section Heading */
+.section-heading {
+    font-family: Royal Castle;
+    font-size: 3rem;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 60px;
+}
+
+/* Focus Boxes */
+.focus-box {
+    border-style: solid;
+    border-color: #f3f3f3;
+    border-width: 1px;
+    background: #f8f9fa;
+    padding: 35px;
+    border-radius: 10px;
+}
+
+.left-box {
+    text-align: left;
+}
+
+.right-box {
+    text-align: left;
+}
+
+.box-title {
+    font-family: Aleo Regular;
+    color: #666;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* List Styling */
+.negative-points,
+.positive-points {
+    list-style: none;
+    padding: 0;
+}
+
+.negative-points li,
+.positive-points li {
+    font-family: Aleo Regular;
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 7px;
+    display: flex;
+    align-items: center;
+}
+
+.negative-point-icon {
+    height: 25px;
+    padding-right: 10px;
+}
+
+.positive-point-icon {
+    height: 25px;
+    padding-right: 10px;
+}
+
+.icon {
+    font-size: 1.3rem;
+    margin-right: 10px;
+}
+
+/* Conversion Message */
+.conversion-message {
+    font-family: Aleo Regular;
+    font-size: 1.5rem;
+    margin-top: 15px;
+    margin-bottom: auto;
+    font-weight: bold;
+    color: #555;
+}
+
+.digital-marketing-section .mt-4 {
+    margin-top: 3rem !important;
+    margin-bottom: 3rem;
+}
+
+/* CTA Button */
+.optimize-btn {
+    font-family: Roboto Reguler;
+    background: #007bff;
+    color: white;
+    border-radius: 50px;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 15px;
+    text-align: left;
+}
+
+.optimize-btn span {
+    margin-left: 8px;
+}
+
+/* The Big Mistakes Hurting Your Sales Section */
+.big-mistakes-section {
+    padding: 80px 0;
+    padding-top: 0;
+    background: #ffffff;
+    text-align: center;
+}
+
+.big-mistakes-section .line-separator {
+    margin-top: 80px;
+}
+
+/* Section Heading */
+.big-mistakes-title {
+    font-family: Royal Castle;
+    font-size: 3rem;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.big-mistakes-title .warning-icon {
+    font-size: 2.5rem;
+    color: #ffcc00;
+}
+
+/* Mistakes List */
+.mistakes-list {
+    list-style: none;
+    padding: 0;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.mistakes-list li {
+    font-family: Aleo Bold Font;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    color: #4D4D4D;
+}
+
+.mistakes-list .icon {
+    font-size: 1.5rem;
+    color: red;
+    margin-right: 10px;
+}
+
+/* Revenue Message */
+.revenue-message {
+    font-family: Aleo Bold Font;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #555;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.revenue-message .rocket-icon {
+    font-size: 2rem;
+    color: #ff5733;
+}
+
+/* CTA Button */
+.conversion-btn {
+    font-family: Roboto Reguler;
+    background: #007bff;
+    color: white;
+    border-radius: 50px;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 15px;
+    text-align: left;
+
+}
+
+.conversion-btn span {
+    margin-left: 8px;
+}
+
+/* CRO Process Section */
+.cro-process {
+    text-align: center;
+    padding: 60px 20px;
+    padding-top: 0px;
+    background: #fff;
+}
+
+.cro-process .line-separator {
+    margin-top: 80px;
+}
+
+.cro-title {
+    font-family: Royal Castle;
+    font-size: 3rem;
+    color: #000000;
+    margin-bottom: 0;
+}
+
+.cro-title .highlight {
+    font-family: Royal Castle;
+    font-size: 3rem;
+    color: #ff0080;
+}
+
+.cro-subtitle {
+    font-family: Aleo Bold Font;
+    font-size: 1.2rem;
+    color: #666666;
+    margin-bottom: 40px;
+}
+
+.cro-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1250px;
+    margin: auto;
+}
+
+.cro-step {
+    border-style: solid;
+    border-color: #f0f0f0;
+    border-width: 1px;
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.cro-step .title-box {
+    min-height: 225px;
+}
+
+.cro-step .line {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 2px;
+    background: #ececec;
+}
+
+.cro-step:hover {
+    transform: translateY(-5px);
+}
+
+.cro-step img {
+    max-height: 150px;
+    margin-bottom: 25px;
+}
+
+.cro-step h3 {
+    font-family: Aleo Bold Font;
+    font-size: 1rem;
+    color: #4D4D4D;
+    margin-bottom: 10px;
+}
+
+.cro-step ul {
+    font-family: Aleo Regular;
+    list-style: none;
+    padding: 0;
+    font-size: 0.9rem;
+    color: #808080;
+}
+
+.cro-step ul li {
+    margin: 5px 0;
+}
+
+.cro-results {
+    font-family: Aleo Regular;
+    margin-top: 40px;
+    font-size: 2rem;
+    color: #666666;
+}
+
+.cro-process-button {
+    font-family: Roboto Reguler;
+    background: #007bff;
+    color: white;
+    border-radius: 50px;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 15px;
+    text-align: left;
+    transition: 0.3s ease-in-out;
+}
+
+.cro-process-button:hover {
+    background: #0056b3;
+}
+
+.cro-logos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.cro-logos img {
+    max-height: 35px;
+    opacity: 0.7;
+    transition: 0.3s ease-in-out;
+}
+
+.cro-logos img:hover {
+    opacity: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cro-title {
+        font-size: 2rem;
+    }
+
+    .cro-steps {
+        grid-template-columns: 1fr;
+    }
+
+    .cro-button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+/* Is CRO Right for You Section */
+.cro-right {
+    font-family: Aleo Regular;
+    text-align: center;
+    padding: 60px 20px;
+    padding-top: 0px;
+    background: #fff;
+}
+
+.cro-right .line-separator {
+    margin-top: 80px;
+}
+
+
+.cro-right-button {
+    font-family: Roboto Reguler;
+    background: #007bff;
+    color: white;
+    border-radius: 50px;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 15px;
+    text-align: left;
+    transition: 0.3s ease-in-out;
+}
+
+.cro-right-button:hover {
+    background: #0056b3;
+}
+
+.cro-right-title {
+    font-family: Royal Castle;
+    font-size: 3rem;
+    color: #000000;
+    margin-bottom: 0;
+}
+
+.cro-right-title .highlight {
+    font-family: Royal Castle;
+    font-size: 3rem;
+    color: #ff0080;
+}
+
+.cro-right-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.cro-right-text {
+
+    flex: 1;
+    text-align: left;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.cro-right-text ul {
+    list-style: none;
+    padding: 0;
+}
+
+.cro-right-text ul li {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.cro-right-image {
+    flex: 1;
+    max-width: 400px;
+}
+
+.cro-right-image img {
+    width: 100%;
+}
+
+.cro-right-note {
+    font-family: Aleo Bold Font;
+    font-size: 1.7rem;
+    margin-top: 30px;
+    color: #666666;
+}
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cro-right-title {
+        font-size: 2rem;
+    }
+
+    .cro-right-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cro-right-text {
+        text-align: center;
+    }
+
+    .cro-button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+/* Concerned About CRO Section */
+.cro-concern {
+    text-align: center;
+    padding: 60px 20px;
+    padding-top: 0px;
+    background: #fff;
+}
+
+.cro-concern .line-separator {
+    margin-top: 80px;
+}
+
+.cro-concern-title {
+    font-family: Royal Castle;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 60px;
+}
+
+/* FAQ List */
+.cro-faq {
+    max-width: 900px;
+    margin: auto;
+    text-align: left;
+}
+
+.faq-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ECECEC;
+}
+
+.faq-number {
+    font-family: Aleo Bold Font;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #4D4D4D;
+}
+
+.faq-content h3 {
+    font-family: Aleo Bold Font;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #4D4D4D;
+}
+
+.faq-content p {
+    font-family: Aleo Regular;
+    font-size: 1rem;
+    color: #007bff;
+}
+
+
+/* CRO Strategy Text */
+.cro-strategy {
+    font-family: Aleo Bold Font;
+    font-size: 2rem;
+    margin-top: 60px;
+    color: #666666;
+    font-weight: bold;
+}
+
+
+/* Ask a CRO Expert Button */
+.ask-cro-button {
+    font-family: Aleo Bold Font;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #C577DE;
+    color: white;
+    padding: 30px 25px;
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    width: 600px;
+    margin: 20px auto 0;
+    box-shadow: 0 5px 15px rgba(192, 132, 252, 0.3);
+}
+
+.ask-cro-button img {
+    width: 100px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.ask-cro-button:hover {
+    background: rgb(143, 72, 209);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cro-concern-title {
+        font-size: 2rem;
+    }
+
+    .faq-item {
+        flex-direction: column;
+    }
+
+    .faq-number {
+        font-size: 1.2rem;
+    }
+
+    .cro-button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+/* CRO Services Section */
+.cro-services {
+    text-align: center;
+    padding: 60px 20px;
+    padding-top: 0px;
+    background: #fff;
+}
+
+.cro-services .line-separator {
+    margin-top: 80px;
+}
+
+.cro-services-title {
+    font-family: Royal Castle;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #080808;
+    margin-bottom: 50px;
+}
+
+.cro-services-title .highlight {
+    font-family: Royal Castle;
+    font-size: 3rem;
+    color: #DD1082;
+}
+
+/* Services Grid */
+.cro-services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.service-item {
+    border-style: solid;
+    border-color: #f0f0f0;
+    border-width: 1px;
+    background: #f9f9f9;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    text-align: center;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+}
+
+.service-item-img-box {
+    min-height: 175px;
+}
+
+.service-item img {
+    max-height: 140px;
+    margin-bottom: 15px;
+}
+
+.service-item h3 {
+    font-family: Aleo Regular;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #4D4D4D;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .cro-services-title {
+        font-size: 2rem;
+    }
+
+    .cro-services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .cro-services-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Grow Your Revenue Section */
+.grow-revenue {
+    text-align: center;
+    padding: 60px 20px;
+    padding-top: 0px;
+    background: #fff;
+}
+
+.grow-title {
+    font-family: Royal Castle;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #080808;
+    margin-bottom: 0px;
+}
+
+.grow-title .highlight {
+    font-family: Royal Castle;
+    font-size: 3rem;
+    color: #ff0080;
+}
+
+.grow-subtitle {
+    font-family: Aleo Regular;
+    font-size: 1.4rem;
+    color: #666666;
+    margin-bottom: 40px;
+}
+
+/* Benefits Grid */
+.grow-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.grow-item {
+    border-style: solid;
+    border-color: #f0f0f0;
+    border-width: 1px;
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.grow-item .line {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 2px;
+    background: #ececec;
+}
+
+.grow-item .title-box {
+    min-height: 225px;
+}
+
+.grow-item:hover {
+    transform: translateY(-5px);
+}
+
+.grow-item img {
+    max-height: 160px;
+    margin-bottom: 25px;
+}
+
+.grow-item h3 {
+    font-family: Aleo Bold Font;
+    font-size: 1rem;
+    color: #4D4D4D;
+    margin-bottom: 10px;
+}
+
+.grow-item p {
+    font-family: Aleo Regular;
+    list-style: none;
+    padding: 0;
+    font-size: 0.9rem;
+    color: #808080;
+}
+
+
+/* CTA Button */
+.grow-button {
+    font-family: Roboto Reguler;
+    background: #007bff;
+    color: white;
+    border-radius: 50px;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 40px;
+    text-align: left;
+    transition: 0.3s ease-in-out;
+}
+
+.grow-button:hover {
+    background: #0056b3;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .grow-title {
+        font-size: 2rem;
+    }
+
+    .grow-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .grow-button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+}
+
+
+.footer {
+    background-color: #007bff;
+    color: white;
+    padding: 35px 0 10px 0;
+}
+
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    text-align: right;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+
+/* Ensure images are responsive globally */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Mobile Styles for Tablets (max-width: 768px) */
+@media only screen and (max-width: 768px) {
+    /* General Container Adjustments */
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    /* Hero Section */
+    .hero-section {
+        padding-top: 80px; /* Reduce top padding */
+    }
+    .hero-content .row {
+        flex-direction: column; /* Stack columns */
+    }
+    .hero-left-content {
+        text-align: center; /* Center text for mobile */
+    }
+    .hero-section h1 {
+        font-size: 2.5rem; /* Reduce title size */
+    }
+    .crossed-text {
+        font-size: 1.5rem;
+    }
+    .agency-text {
+        font-size: 1.8rem;
+    }
+    .hero-description {
+        font-size: 1.2rem;
+    }
+    .guarantee-text {
+        font-size: 1.5rem;
+    }
+    .highlight {
+        font-size: 1.5rem;
+    }
+    .bold-free {
+        font-size: 2rem;
+    }
+    .hero-btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+    .bottom-features .row {
+        flex-direction: column; /* Stack features */
+        width: 100%;
+    }
+    .bottom-features .feature-item {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    /* Conversion Problem Section */
+    .conversion-title {
+        font-size: 2rem;
+    }
+    .problem-box {
+        min-height: auto; /* Remove fixed height */
+        padding: 15px;
+        margin-top: 15px;
+    }
+    .problem-box p {
+        font-size: 16px;
+    }
+    .conversion-subheading {
+        font-size: 20px;
+    }
+    .conversion-subheading-02 {
+        font-size: 16px;
+    }
+    .conversion-highlight {
+        font-size: 25px;
+    }
+    .cta-links {
+        font-size: 20px;
+    }
+
+    /* Digital Marketing Section */
+    .section-heading {
+        font-size: 2rem;
+    }
+    .focus-box {
+        padding: 20px;
+    }
+    .box-title {
+        font-size: 1.2rem;
+    }
+    .negative-points li,
+    .positive-points li {
+        font-size: 1rem;
+    }
+    .conversion-message {
+        font-size: 1.2rem;
+    }
+    .optimize-btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    /* Big Mistakes Section */
+    .big-mistakes-title {
+        font-size: 2rem;
+    }
+    .mistakes-list li {
+        font-size: 0.9rem;
+    }
+    .revenue-message {
+        font-size: 1.5rem;
+    }
+    .conversion-btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    /* CRO Process Section */
+    .cro-title {
+        font-size: 2rem;
+    }
+    .cro-subtitle {
+        font-size: 1rem;
+    }
+    .cro-step {
+        padding: 20px;
+    }
+    .cro-step .title-box {
+        min-height: auto; /* Remove fixed height */
+    }
+    .cro-step h3 {
+        font-size: 0.9rem;
+    }
+    .cro-results {
+        font-size: 1.5rem;
+    }
+    .cro-process-button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+    .cro-logos {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    /* Is CRO Right for You Section */
+    .cro-right-title {
+        font-size: 2rem;
+    }
+    .cro-right-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .cro-right-text {
+        text-align: center;
+    }
+    .cro-right-text ul li {
+        font-size: 1rem;
+    }
+    .cro-right-note {
+        font-size: 1.3rem;
+    }
+    .cro-right-button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    /* Concerned About CRO Section */
+    .cro-concern-title {
+        font-size: 2rem;
+    }
+    .faq-item {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .faq-content h3 {
+        font-size: 1.2rem;
+    }
+    .faq-content p {
+        font-size: 0.9rem;
+    }
+    .cro-strategy {
+        font-size: 1.5rem;
+    }
+    .ask-cro-button {
+        width: 100%;
+        font-size: 1.5rem;
+        padding: 20px;
+    }
+    .ask-cro-button img {
+        width: 80px;
+    }
+
+    /* CRO Services Section */
+    .cro-services-title {
+        font-size: 2rem;
+    }
+    .service-item {
+        padding: 15px;
+    }
+    .service-item-img-box {
+        min-height: auto;
+    }
+    .service-item h3 {
+        font-size: 0.9rem;
+    }
+
+    /* Grow Your Revenue Section */
+    .grow-title {
+        font-size: 2rem;
+    }
+    .grow-subtitle {
+        font-size: 1.2rem;
+    }
+    .grow-item {
+        padding: 20px;
+    }
+    .grow-item .title-box {
+        min-height: auto;
+    }
+    .grow-item h3 {
+        font-size: 0.9rem;
+    }
+    .grow-button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    /* Floating Navbar */
+    .floating-navbar {
+        width: 90%;
+        gap: 20px;
+        flex-wrap: wrap;
+        padding: 8px 10px;
+    }
+    .floating-navbar a {
+        font-size: 0.9rem;
+    }
+}
+
+/* Mobile Styles for Phones (max-width: 480px) */
+@media only screen and (max-width: 480px) {
+    /* Hero Section */
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+    .crossed-text {
+        font-size: 1.2rem;
+    }
+    .agency-text {
+        font-size: 1.5rem;
+    }
+    .hero-description {
+        font-size: 1rem;
+    }
+    .guarantee-text {
+        font-size: 1.2rem;
+    }
+    .highlight {
+        font-size: 1.2rem;
+    }
+    .bold-free {
+        font-size: 1.5rem;
+    }
+    .hero-btn {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+
+    /* Conversion Problem Section */
+    .conversion-title {
+        font-size: 1.5rem;
+    }
+    .problem-box p {
+        font-size: 14px;
+    }
+    .conversion-subheading {
+        font-size: 16px;
+    }
+    .conversion-highlight {
+        font-size: 20px;
+    }
+    .cta-links {
+        font-size: 16px;
+    }
+
+    /* Digital Marketing Section */
+    .section-heading {
+        font-size: 1.5rem;
+    }
+    .box-title {
+        font-size: 1rem;
+    }
+    .conversion-message {
+        font-size: 1rem;
+    }
+
+    /* Big Mistakes Section */
+    .big-mistakes-title {
+        font-size: 1.5rem;
+    }
+    .revenue-message {
+        font-size: 1.2rem;
+    }
+
+    /* CRO Process Section */
+    .cro-title {
+        font-size: 1.5rem;
+    }
+    .cro-results {
+        font-size: 1.2rem;
+    }
+
+    /* Is CRO Right for You Section */
+    .cro-right-title {
+        font-size: 1.5rem;
+    }
+    .cro-right-note {
+        font-size: 1rem;
+    }
+
+    /* Concerned About CRO Section */
+    .cro-concern-title {
+        font-size: 1.5rem;
+    }
+    .cro-strategy {
+        font-size: 1.2rem;
+    }
+    .ask-cro-button {
+        font-size: 1.2rem;
+        padding: 15px;
+    }
+    .ask-cro-button img {
+        width: 60px;
+    }
+
+    /* CRO Services Section */
+    .cro-services-title {
+        font-size: 1.5rem;
+    }
+
+    /* Grow Your Revenue Section */
+    .grow-title {
+        font-size: 1.5rem;
+    }
+    .grow-subtitle {
+        font-size: 1rem;
+    }
+}
+
+/* Hide floating navbar on mobile devices */
+@media only screen and (max-width: 768px) {
+    .floating-navbar {
+        display: none !important;
+    }
+}
