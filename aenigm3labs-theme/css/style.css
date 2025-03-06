@@ -85,10 +85,17 @@ css
     gap: 25px;
 }
 
-.navbar-nav .nav-item .nav-link {
+.navbar-nav .nav-item {
     font-family: Aleo Regular;
     color: #333;
     font-weight: bold;
+}
+.nav-link{
+	font-family: Aleo Regular;
+    color: #333;
+    font-weight: bold;
+	font-size:20px;
+	
 }
 
 
@@ -356,14 +363,14 @@ css
 .bottom-features .row {
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
 }
 
 .bottom-features .feature-item {
     font-family: Aleo Regular;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: bold;
     color: #6d6d6d;
 }
@@ -1293,19 +1300,29 @@ img {
         padding-right: 15px;
     }
 
-    /* Hero Section */
     .hero-section {
-        padding-top: 80px; /* Reduce top padding */
+        padding-top: 80px;
     }
     .hero-content .row {
-        flex-direction: column; /* Stack columns */
+        flex-direction: column;
     }
     .hero-left-content {
-        text-align: center; /* Center text for mobile */
+        text-align: center;
     }
     .hero-section h1 {
-        font-size: 2.5rem; /* Reduce title size */
+        font-size: 2.5rem;
+        margin: 0 auto;
+        max-width: 90%;
     }
+
+    .crossed-text, .agency-text {
+        text-align: left !important;
+        display: block;
+        margin: 0 auto;
+        max-width: 90%;
+        padding-left: 15px; /* Optional: Add left padding for spacing */
+    }
+
     .crossed-text {
         font-size: 1.5rem;
     }
@@ -1329,7 +1346,7 @@ img {
         padding: 10px 20px;
     }
     .bottom-features .row {
-        flex-direction: column; /* Stack features */
+        flex-direction: column;
         width: 100%;
     }
     .bottom-features .feature-item {
@@ -1525,9 +1542,24 @@ img {
 /* Mobile Styles for Phones (max-width: 480px) */
 @media only screen and (max-width: 480px) {
     /* Hero Section */
+    .hero-left-content {
+        text-align: center;
+    }
     .hero-section h1 {
         font-size: 2rem;
+        margin: 0 auto;
+        max-width: 90%;
+        word-wrap: break-word;
     }
+
+    .crossed-text, .agency-text, .hero-description {
+        text-align: left !important;
+        display: block;
+        margin: 0 auto;
+        max-width: 90%;
+        padding-left: 0px; /* Optional: Add left padding for spacing */
+    }
+
     .crossed-text {
         font-size: 1.2rem;
     }
@@ -1536,9 +1568,11 @@ img {
     }
     .hero-description {
         font-size: 1rem;
+		margin-bottom:30px;
     }
     .guarantee-text {
         font-size: 1.2rem;
+		
     }
     .highlight {
         font-size: 1.2rem;
@@ -1550,6 +1584,32 @@ img {
         font-size: 0.9rem;
         padding: 8px 15px;
     }
+	
+	.bottom-features .row {
+        flex-direction: column;
+        width: 100%;
+        align-items:center;
+    }
+    .bottom-features .feature-item {
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+        text-align:left;
+        display: flex;
+        align-items:center;
+        justify-content: left;
+        width: 100%;
+		
+    }
+    .bottom-features .feature-item-image {
+        height: 18px; /* Further reduce image size for smaller phones */
+        padding-right: 5px;
+        display: inline-flex;
+        align-items: center;
+		
+    }
+	
+	
+	
 
     /* Conversion Problem Section */
     .conversion-title {
@@ -1586,18 +1646,44 @@ img {
     .revenue-message {
         font-size: 1.2rem;
     }
+	
+	.conversion-btn {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        text-align: center;
+    }
+
+    .conversion-btn span {
+        margin-left: 6px;
+        display: inline;
+    }
 
     /* CRO Process Section */
-    .cro-title {
-        font-size: 1.5rem;
+    .cro-title,.cro-results{
+        font-size: 2rem;
+		font-weight:bold;
     }
-    .cro-results {
-        font-size: 1.2rem;
+    
+	.cro-title .highlight {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #ff0080;
     }
-
+	
+	
     /* Is CRO Right for You Section */
     .cro-right-title {
-        font-size: 1.5rem;
+        font-size: 2rem;
+		font-weight:bold;
+    }
+	.cro-right-title .highlight {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #ff0080;
     }
     .cro-right-note {
         font-size: 1rem;
@@ -1620,15 +1706,27 @@ img {
 
     /* CRO Services Section */
     .cro-services-title {
-        font-size: 1.5rem;
+        font-size: 2rem;
+		font-weight:bold;
+    }
+	.cro-services-title .highlight {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #DD1082;
     }
 
     /* Grow Your Revenue Section */
     .grow-title {
-        font-size: 1.5rem;
+        font-size: 2rem;
+		font-weight:bold;
     }
     .grow-subtitle {
         font-size: 1rem;
+    }
+	.grow-title .highlight {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #ff0080;
     }
 }
 
@@ -1636,5 +1734,16 @@ img {
 @media only screen and (max-width: 768px) {
     .floating-navbar {
         display: none !important;
+    }
+	.navbar-brand img {
+        height: 30px !important;
+        max-width: 100%;
+    }
+	.proposal-btn {
+        font-size: 12px; /* Reduce font size for tablets */
+        padding: 8px; /* Reduce overall padding */
+        padding-left: 20px; /* Reduce left padding */
+        padding-right: 20px; /* Reduce right padding */
+        border-radius: 40px; /* Slightly reduce border radius for consistency */
     }
 }

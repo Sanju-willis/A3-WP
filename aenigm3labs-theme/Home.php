@@ -20,7 +20,8 @@ get_header();
             <p class="hero-p">
                 "Stop second-guessing your digital marketing ROI. With Aenigm3 Labs. team bridges the gap between marketing and revenue. Discover how we drive sales with realistic objectives and KPIs."
             </p>
-            <button class="cta-btn">Get My Proposal</button>
+            <button class="cta-btn" id="myPopupTrigger">Get My Proposal</button>
+
         </div>
         <div class="hero-image">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Hero/see-how-drive.png" alt="Marketing Illustration">

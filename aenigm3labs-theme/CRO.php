@@ -18,14 +18,17 @@ get_header();
                     Helping Direct to Consumer businesses to increase sales & revenue by optimizing conversion with Data Driven Insights & Testing.
                 </p>
             </div>
-
-            <!-- Right Content -->
+			
+			<!-- Right Content -->
             <div class="col-lg-4 text-center">
-                <p class="guarantee-text">
-                    Guaranteed <br><span class="highlight">2X ROI in 160 days</span> <br> or We Work for <br> <span class="bold-free">FREE!</span>
-                </p>
-                <a href="#" class="btn btn-primary hero-btn">See If My Business Qualifies <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a>
-            </div>
+    			<p class="guarantee-text">
+        			Guaranteed <br><span class="highlight">2X ROI in 160 days</span> <br> or We Work for <br> <span class="bold-free">FREE!</span>
+    			</p>
+    			<a href="#" id="applyform" class="btn btn-primary hero-btn">
+  See If My Business Qualifies <span><i class="fa fa-caret-right" aria-hidden="true"></i></span>
+				</a>
+			</div>
+
 
             <!-- Bottom Features -->
             <div class="bottom-features">
